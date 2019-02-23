@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+	</head>
+<style>
+            .content {
+                padding-top: 50px;
+            }
+            .websql {
+                margin-top: 10px;
+            }
+            /*设置按钮样式*/
+            .websql button{
+                height: 44px;
+                width: 120px;
+            }
+        </style>
+
+	<body>
+		<div class="content">
+            <div class="websql">
+                <button type="button" onclick="creatTable()">新建数据库</button>
+            </div>
+            <div class="websql">
+                <!--增-->
+                <button type="button" onclick="insterData()">插入数据</button> 
+            </div>
+            <div class="websql">
+                <!--删-->
+                <button type="button" onclick="deleteAData()">删除一条数据</button>
+                <button type="button" onclick="deleteAllData()">删除全部数据</button>
+            </div>
+            <div class="websql">
+                <!--改-->
+                <button type="button" onclick="updateData()">修改数据</button>
+            </div>
+            <div class="websql">
+                <!--查-->
+                <button type="button" onclick="selectAData()">查找一条数据</button>
+                <button type="button" onclick="selectALlData()">查找全部数据</button>
+            </div>
+        </div>
+
+		<script src="js/mui.js"></script>
+		<script src="../../js/db/websql.js"></script>
+		<script src="../../js/foot/home.js"></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

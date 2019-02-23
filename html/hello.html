@@ -9,7 +9,7 @@
 			document.write('<script src="../js/fix.js?rd=?rd=' + Math.random() + '"><\/script>');
 		</script>
 		<script type="text/javascript">
-			link(['../css/mui.min.css', '../css/swiper-3.4.2.min.css','../css/iconfont.css'],true);
+			link(['../css/mui.min.css', '../css/swiper-3.4.2.min.css', '../css/iconfont.css'], true);
 		</script>
 		<style type="text/css">
 			.swiper-slide img {
@@ -17,31 +17,33 @@
 				height: 100vh;
 				display: block;
 			}
-			
+
 			.swiper-pagination-bullet-active {
 				background: #fff none repeat scroll 0 0;
 				opacity: 1;
 			}
-			#join{
+
+			#join {
 				position: absolute;
 				bottom: 60px;
 				text-align: center;
 				width: 100%;
-				font-size: 10rem;				
+				font-size: 10rem;
 				color: #fff;
 				padding: 5px 10px;
-				border-radius:5px ;
+				border-radius: 5px;
 			}
-			#pass{
+
+			#pass {
 				position: fixed;
 				top: 15px;
 				right: 15px;
 				z-index: 999;
 				border: none;
 				border-radius: 6px;
-				padding: 7px 13px;				
+				padding: 7px 13px;
 				color: #fff;
-				background: rgba(0,0,0,0.5);
+				background: rgba(0, 0, 0, 0.5);
 			}
 		</style>
 	</head>
@@ -55,14 +57,15 @@
 				<div class="swiper-wrapper">
 					<div class="swiper-slide"><img src="../images/hello1.jpg" class="swiperImg" /></div>
 					<div class="swiper-slide"><img src="../images/hello2.jpg" class="swiperImg" /></div>
-					<div class="swiper-slide" ><img src="../images/hello3.jpg" class="swiperImg" /></div>	
-					<div class="swiper-slide" ><span id="join" class="iconfont icon-fight"></span><img src="../images/hello4.jpg" class="swiperImg" /></div>	
+					<div class="swiper-slide">
+						<span id="join" class="iconfont icon-fight"></span><img src="../images/hello3.jpg" class="swiperImg" />
+					</div>
 				</div>
 				<div class="swiper-pagination"></div>
 			</div>
 		</div>
 		<script type="text/javascript">
-			script(['../js/mui.min.js', '../js/lib/swiper-3.4.1.min.js'],true);
+			script(['../js/mui.min.js', '../js/lib/swiper-3.4.1.min.js'], true);
 		</script>
 		<script type="text/javascript">
 			var mySwiper = new Swiper('.swiper-container', {
@@ -70,12 +73,12 @@
 			});
 			mui.ready(function() {
 				mui(".swiper-wrapper").on("tap", "#join", function() {
-					localStorage.setItem("guide","yes");
-					window.location.href='main.html';
+					localStorage.setItem("guide", "yes");
+					window.location.href = 'main.html';
 				});
 				mui("body").on("tap", "#pass", function() {
-					localStorage.setItem("guide","yes");
-					window.location.href='main.html';
+					localStorage.setItem("guide", "yes");
+					window.location.href = 'main.html';
 				});
 			})
 		</script>
